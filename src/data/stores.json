@@ -1,5 +1,5 @@
 {
-  "cities": ["Vilnius", "Kaunas"],
+  "cities": ["Vilnius", "Kaunas", "Pajūris", "Šiauliai", "Kiti miestai"],
   "stores": [
     {
       "id": 1,

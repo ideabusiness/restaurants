@@ -63,7 +63,7 @@ class Filters extends Component {
             <ul className="dropdown-menu">{citiesItems}</ul>
           </div>
         </div>
-        <div className="openHours pull-left">
+        <div className="hide openHours pull-left">
           <div className={this.state.hoursDropdownOpen ? 'btn-group open' : 'btn-group'}>
             <button
               type="button"

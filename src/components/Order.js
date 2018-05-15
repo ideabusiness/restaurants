@@ -60,11 +60,6 @@ class Order extends Component {
                   {txt.title}
                 </a>
               </li>
-              <li className={this.getLiClass('price')}>
-                <a href={null} onClick={() => this.selectOrder('price')}>
-                  {txt.price}
-                </a>
-              </li>
               <li className={this.getLiClass('distance')}>
                 <a href={null} onClick={() => this.selectOrder('distance')}>
                   {txt.distance}
