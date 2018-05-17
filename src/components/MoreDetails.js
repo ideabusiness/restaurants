@@ -20,7 +20,6 @@ class MoreDetails extends Component {
   render() {
     return (
       <div className={this.props.openStore === this.props.id ? 'more-details' : 'more-details hidden'}>
-        <WorkingHours hours={this.props.hours} />
         <p className="text-right">
           &nbsp;
           <button className={this.getClass(this.props.mobile)} type="button" onClick={this.props.toggleStores}>
