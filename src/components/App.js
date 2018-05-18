@@ -172,7 +172,7 @@ class App extends Component {
             orderBy={this.state.orderBy}
             toggleStores={this.toggleStores}
           />
-          <Map stores={this.state.visibleStores} showStore={this.showStore} openStore={this.state.openStore} />
+          <Map stores={this.state.visibleStores} showStore={this.showStore} openStore={this.state.openStore} city={this.state.city} hours={this.state.hours}/>
         </div>
 
         <Footer />

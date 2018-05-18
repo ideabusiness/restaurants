@@ -54,14 +54,16 @@ class Map extends Component {
     this.initMarkers();
   }
   componentDidUpdate(prevProps) {
-    setTimeout(() => {
-      this.initMap();
-      this.initMarkers();
+    // setTimeout(() => {
+      if ((prevProps.city !== this.props.city) ||  (prevProps.hours !== this.props.hours)) {
+        this.initMap();
+        this.initMarkers();
+      }
       if (prevProps.openStore !== this.props.openStore) {
         this.markers = this.colorMarkers(this.markers, this.props.openStore);
         this.moveMap(this.map, this.bounds, this.props.openStore, this.props.stores);
       }
-    }, 10);
+    // }, 10);
   }
   colorMarkers(markers, index) {
     // go through markers and assign appropriate colour
