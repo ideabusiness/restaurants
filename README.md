@@ -6,4 +6,4 @@ To deploy
 
 `npm run deploy`
 
-View app at https://jpotapova.github.io/playrooms/
+View app at https://jpotapova.github.io/restaurants/
